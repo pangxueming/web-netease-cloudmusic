@@ -38,12 +38,7 @@ export default memo(function AXTopBanner() {
     <BannerWrapper bgImage={bgImage}>
       <div className="banner wrap-v2">
         <BannerLeft>
-          <Carousel
-            effect="fade"
-            autoplay
-            ref={bannerRef}
-            beforeChange={bannerChange}
-          >
+          <Carousel effect="fade" autoplay ref={bannerRef} beforeChange={bannerChange}>
             {topBanners.map((item, index) => {
               return (
                 <div className="banner-item" key={item.imageUrl}>
